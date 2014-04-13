@@ -51,7 +51,7 @@ class SimpleChat {
         mysql_select_db($this->sDbName);
 
         //returning the last 15 messages
-        $vRes = mysql_query("SELECT * FROM `s_chat_messages` ORDER BY `id` ASC LIMIT 15");
+        $vRes = mysql_query("SELECT * FROM `s_chat_messages` ORDER BY `id` DESC LIMIT 15");
 
         $sMessages = '';
 
