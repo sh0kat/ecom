@@ -1,9 +1,8 @@
 <?php
 //connect to the database - either include a connection variable file
 //or type the following lines:
-$connect = mysql_connect("localhost", "root", "")
-or die ("Hey loser, check your server connection.");
-mysql_select_db("ecommerce");
+
+require_once 'conn.inc.php';
 $query = "INSERT INTO products VALUES (
 '00001', 'CBA Logo T-shirt',
 'This T-shirt will show off your CBA connection.
